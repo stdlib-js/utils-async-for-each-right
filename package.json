@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/utils-async-for-each-right",
+  "version": "0.0.0",
+  "description": "Invoke a function once for each element in a collection, iterating from right to left.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-async-for-each-right.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "for",
+    "each",
+    "right",
+    "foreach",
+    "foreachright",
+    "array.foreach",
+    "array.foreachright",
+    "async",
+    "asynchronous",
+    "iterate",
+    "collection",
+    "array-like",
+    "array"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
