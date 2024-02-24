@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import forEachRightAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-for-each-right@esm/index.mjs';
+import forEachRightAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-for-each-right@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-for-each-right@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-for-each-right@v0.2.1-esm/index.mjs';
 ```
 
 #### forEachRightAsync( collection, \[options,] fcn, done )
@@ -306,7 +306,7 @@ The function accepts the same `options` as `forEachRightAsync()`.
 
 var resolve = require( 'path' ).resolve;
 import readFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-file@esm/index.mjs';
-import forEachRightAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-for-each-right@esm/index.mjs';
+import forEachRightAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-for-each-right@v0.2.1-esm/index.mjs';
 
 var files = [
     resolve( __dirname, 'package.json' ),
