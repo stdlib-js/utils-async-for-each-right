@@ -1,0 +1,11 @@
+"use strict";var v=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var w=v(function(K,b){
+var C=require('@stdlib/assert-is-plain-object/dist'),o=require('@stdlib/assert-has-own-property/dist'),V=require('@stdlib/assert-is-boolean/dist').isPrimitive,N=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,h=require('@stdlib/error-tools-fmtprodmsg/dist');function R(e,r){return C(r)?(o(r,"thisArg")&&(e.thisArg=r.thisArg),o(r,"series")&&(e.series=r.series,!V(e.series))?new TypeError(h('1R72o',"series",e.series)):o(r,"limit")&&(e.limit=r.limit,!N(e.limit))?new TypeError(h('1R73P',"limit",e.limit)):null):new TypeError(h('1R72V',r));}b.exports=R
+});var A=v(function(M,E){
+var j=require("debug"),l=j("for-each-right-async:limit");function k(e,r,i,u){var n,m,s,t,a,f;if(t=e.length,l("Collection length: %d",t),t===0)return l("Finished processing a collection."),u();for(t<r.limit?s=t:s=r.limit,l("Concurrency limit: %d",s),l("Number of arguments: %d",i.length),n=0,a=t,f=0;f<s;f++)a>0&&y();function y(){a-=1,l("Collection element %d: %s.",a,JSON.stringify(e[a])),i.length===2?i.call(r.thisArg,e[a],g):i.length===3?i.call(r.thisArg,e[a],a,g):i.call(r.thisArg,e[a],a,e,g)}function g(c){if(!m){if(c)return m=!0,l("Encountered an error: %s",c.message),u(c);if(n+=1,l("Processed %d of %d collection elements.",n,t),a>0)return y();if(n===t)return l("Finished processing a collection."),u()}}}E.exports=k
+});var q=v(function(Q,O){
+var x=require('@stdlib/assert-is-function/dist'),I=require('@stdlib/assert-is-collection/dist'),d=require('@stdlib/error-tools-fmtprodmsg/dist'),L=require('@stdlib/constants-float64-pinf/dist'),B=w(),J=A();function S(e,r){var i,u,n;if(i={},arguments.length>1){if(u=B(i,e),u)throw u;n=r}else n=e;if(!x(n))throw new TypeError(d('1R73q',n));return i.series?i.limit=1:i.limit||(i.limit=L),m;function m(s,t){if(!I(s))throw new TypeError(d('1R7Ah',s));if(!x(t))throw new TypeError(d('1R73q',t));return J(s,i,n,a);function a(f){if(f)return t(f);t()}}}O.exports=S
+});var F=v(function(U,T){
+var P=q();function z(e,r,i,u){if(arguments.length<4)return P(r)(e,i);P(r,i)(e,u)}T.exports=z
+});var D=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),p=F(),G=q();D(p,"factory",G);module.exports=p;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
